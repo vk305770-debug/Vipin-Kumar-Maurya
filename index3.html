@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer with Center Links</title>
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .nav-center {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-center li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-center li a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-left, .nav-right {
+      flex: 1;
+    }
+
+    .nav-right button {
+      padding: 8px 16px;
+      font-size: 16px;
+      border: none;
+      background-color: #ff9900;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .nav-right button:hover {
+      background-color: #e68a00;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    footer .footer-logo {
+      font-weight: bold;
+      font-size: 18px;
+      flex: 1;
+    }
+
+    footer .footer-links {
+      display: flex;
+      gap: 20px;
+      flex: 2;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer .footer-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    footer .footer-links li a:hover {
+      text-decoration: underline;
+    }
+
+    footer .social-media {
+      display: flex;
+      gap: 15px;
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    footer .social-media a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    footer .social-media a:hover {
+      color: #ff9900;
+    }
+
+    /* Footer small text */
+    footer p {
+      flex-basis: 100%;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+      footer .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+      }
+      footer .social-media {
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="nav-left">
+        <div class="logo">MyLogo</div>
+      </div>
+
+      <ul class="nav-center">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button>Login</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Welcome to My Website</h1>
+    <p>This is a sample page content. Scroll down if you want.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Left: Logo -->
+    <div class="footer-logo">MyLogo</div>
+
+    <!-- Center: Footer Links -->
+    <ul class="footer-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Others</a></li>
+    </ul>
+
+    <!-- Right: Social Media -->
+    <div class="social-media">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- Footer Text -->
+    <p>© 2026 MyWebsite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
